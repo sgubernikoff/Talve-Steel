@@ -19,12 +19,11 @@ function Navbar() {
       />
 
       <div className="topnav" id="myTopnav">
-        <NavLink to="/" className="active">
-          Talve Metals
-        </NavLink>
+        <NavLink to="/">Talve Metals</NavLink>
+        <NavLink to="/about">About Us</NavLink>
         <NavLink to="/products">Products</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/random">******</NavLink>
+        <NavLink to="/feature">******</NavLink>
         <a to="javascript:void(0);" className="icon" onClick={myFunction}>
           <i className="fa fa-bars"></i>
         </a>
