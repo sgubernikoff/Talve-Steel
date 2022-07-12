@@ -21,14 +21,14 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(238, 143, 0);
-  color: rgb(55, 95, 226);
+  background-color: rgb(255, 255, 255);
+  color: rgb(138, 140, 145);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(55, 95, 226);
-  color: rgb(238, 143, 0);
+  background-color: rgb(138, 140, 145);
+  color: rgb(0, 0, 0);
 }
 
 /* Hide the link that should open and close the topnav on small screens */

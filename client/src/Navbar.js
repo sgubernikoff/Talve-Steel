@@ -20,7 +20,7 @@ function Navbar() {
 
       <div className="topnav" id="myTopnav">
         <NavLink to="/" className="active">
-          Home
+          Talve Metals
         </NavLink>
         <NavLink to="/products">Products</NavLink>
         <NavLink to="/contact">Contact</NavLink>
