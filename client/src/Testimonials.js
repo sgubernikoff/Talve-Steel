@@ -7,8 +7,7 @@ function Testimonials() {
     { name: "John", description: "Nice!", rating: 5 },
     {
       name: "Jared",
-      description:
-        "Really great service. Best metal I've ever used. WoooooooooW!...................................................................",
+      description: "Really great service. Best metal I've ever used. WooooW!",
       rating: 5,
     },
   ];
@@ -22,17 +21,17 @@ function Testimonials() {
         ))}
       </div>
       <div className="description-container">
-        <p>{review.description}</p>
+        <p className="test_text">{review.description}</p>
       </div>
     </div>
   ));
 
   return (
-    <div>
-      <div className="financial">
+    <div className="testy">
+      <div className="testimonial">
         <div>
-          <h1 className="whom">Testimonials</h1>
-          <div className="financial_data">
+          {/* <h1 className="whom">Testimonials</h1> */}
+          <div className="testimonial_data">
             {/* <h2 className="whom">
               See what our customers have to say about us:
             </h2> */}

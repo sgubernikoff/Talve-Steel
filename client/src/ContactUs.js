@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <div className="financial">
       <div>
-        <h1 className="whom">Contact Information</h1>
+        {/* <h1 className="whom">Contact Information</h1> */}
         <div className="contact">
           <div className="contactUs1">
             <img src={steelwork} alt="steel worker" />
