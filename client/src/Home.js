@@ -1,4 +1,5 @@
 import React from "react";
+import Financial from "./Financial";
 import SecondaryAbout from "./SecondaryAbout";
 import Slideshow from "./Slideshow";
 
@@ -8,6 +9,7 @@ function Home() {
       {/* <h1>Talve Metals</h1> */}
       <Slideshow />
       <SecondaryAbout />
+      <Financial />
     </div>
   );
 }
