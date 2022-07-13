@@ -11,8 +11,8 @@ function Home() {
       {/* <h1>Talve Metals</h1> */}
       <Slideshow />
       <SecondaryAbout />
-      <Testimonials />
       <Financial />
+      <Testimonials />
       <ContactUs />
     </div>
   );
