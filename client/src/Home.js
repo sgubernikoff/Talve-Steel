@@ -2,6 +2,8 @@ import React from "react";
 import Financial from "./Financial";
 import SecondaryAbout from "./SecondaryAbout";
 import Slideshow from "./Slideshow";
+import Testimonials from "./Testimonials";
+import ContactUs from "./ContactUs";
 
 function Home() {
   return (
@@ -9,7 +11,9 @@ function Home() {
       {/* <h1>Talve Metals</h1> */}
       <Slideshow />
       <SecondaryAbout />
+      <Testimonials />
       <Financial />
+      <ContactUs />
     </div>
   );
 }
