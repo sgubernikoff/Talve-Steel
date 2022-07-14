@@ -1,11 +1,12 @@
 import React from "react";
-import emptystar from "./star.png";
+import TestimonialCard from "./TestimonialCard";
 
 function Testimonials() {
   const reviews = [
-    { name: "James", description: "Really great service", rating: 5 },
-    { name: "John", description: "Nice!", rating: 5 },
+    { id: 1, name: "James", description: "Really great service", rating: 5 },
+    { id: 2, name: "John", description: "Nice!", rating: 5 },
     {
+      id: 3,
       name: "Jared",
       description: "Really great service. Best metal I've ever used. WooooW!",
       rating: 5,
@@ -13,17 +14,7 @@ function Testimonials() {
   ];
 
   const mappedReviews = reviews.map((review) => (
-    <div className="testimonial-card" key={reviews.indexOf(review)}>
-      <h3 className="whom">{review.name}</h3>
-      <div className="star-container">
-        {[...Array(review.rating)].map((rating) => (
-          <img src={emptystar} alt="star" key={reviews.indexOf(review)} />
-        ))}
-      </div>
-      <div className="description-container">
-        <p className="test_text">{review.description}</p>
-      </div>
-    </div>
+    <TestimonialCard review={review} />
   ));
 
   return (
