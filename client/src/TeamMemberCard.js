@@ -7,15 +7,16 @@ function TeamMemberCard({ teamMember }) {
       <h1 className="cardtitle">{teamMember.name}</h1>
       <img alt={teamMember.name} src={teamMember.image} />
       <p className="experience">
-        <strong>Job Title </strong>
+        <strong>Job Title: </strong>
         {teamMember.jobTitle}
       </p>
-      <p className="experience">
+      {/* <p className="experience">
         <strong>Years of Experience </strong>
         {teamMember.experience} years
-      </p>
-      <br />
-      <p>{teamMember.blurb}</p>
+      </p> */}
+
+      <p className="info-card-text">{teamMember.email}</p>
+      <p className="info-card-text">{teamMember.phone}</p>
     </div>
   );
 }
