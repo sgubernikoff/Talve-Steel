@@ -1,5 +1,4 @@
 import React from "react";
-import skyline from "./Skyline.jpeg";
 
 function SecondaryAbout() {
   return (
@@ -34,6 +33,7 @@ function SecondaryAbout() {
         src={
           "https://images.unsplash.com/photo-1609627016501-b862497c7294?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RlZWwlMjBzdHJ1Y3R1cmV8ZW58MHx8MHx8&w=1000&q=80"
         }
+        alt="steel"
       />
     </div>
   );
