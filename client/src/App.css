@@ -314,6 +314,14 @@ button {
   margin: auto;
 }
 
+.about-image-container h1 {
+  font-size: 3vw;
+}
+
+.about-image-container p {
+  font-size: 1.5vw;
+}
+
 .about-image-container img {
   width: 100%;
 }
