@@ -30,7 +30,7 @@ function About() {
           alt="company"
         />
       </div>
-      <h1>Meet the team!</h1>
+      {/* <h1>Meet the team!</h1> */}
       <div className="about-boss-container">
         <TeamMemberCard teamMember={boss} />
       </div>

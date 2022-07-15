@@ -321,6 +321,7 @@ button {
 .about-boss-container {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .about-team-members-container {
@@ -328,15 +329,18 @@ button {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 4%;
+  width: 80%;
+  margin: auto;
 }
 
 .team-member-card {
-  width: 30%;
+  width: 32%;
   border: black solid 1px;
   border-radius: 5px;
   margin-bottom: 2%;
   background-color: rgb(255, 255, 233);
   box-shadow: 5px 5px #6e6e6e;
+  margin-right: 0.65%;
 }
 .team-member-card img {
   width: 33%;
@@ -349,3 +353,11 @@ h1 {
   font-family: serif;
   font-weight: normal;
 }
+
+.cardtitle {
+  font-size: 3vw;
+}
+/* 
+.experience {
+  font-size: 0.85em;
+} */
