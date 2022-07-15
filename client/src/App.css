@@ -302,3 +302,43 @@ button {
 .contactUs2 h1 {
   font-weight: normal;
 }
+
+.about p {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.about-image-container {
+  width: 70%;
+  margin: auto;
+}
+
+.about-image-container img {
+  width: 100%;
+}
+
+.about-boss-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-team-members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+}
+
+.team-member-card {
+  width: 30%;
+  border: black solid 1px;
+  border-radius: 80px;
+  margin-bottom: 2%;
+  background-color: rgb(255, 255, 233);
+}
+.team-member-card img {
+  width: 33%;
+  border: black solid 1px;
+  border-radius: 80px;
+}
