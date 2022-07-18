@@ -30,6 +30,9 @@ function Navbar() {
         <NavLink onClick={myFunction} to="/products">
           Products
         </NavLink>
+        <NavLink onClick={myFunction} to="/conversions">
+          Conversion Chart
+        </NavLink>
         <NavLink onClick={myFunction} to="/contact">
           Contact
         </NavLink>

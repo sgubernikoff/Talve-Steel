@@ -1,6 +1,7 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
 import profile from "./profile.jpeg";
+import place from "./placehold.png";
 
 function About() {
   const boss = {
@@ -27,10 +28,7 @@ function About() {
       <div className="about">
         <div className="leftside">
           <div className="about-image-container">
-            <img
-              src="https://nerdreactor.com/wp-content/uploads/2015/03/Stock-Photos-Unfinished-Business-6.jpg"
-              alt="company"
-            />
+            <img src={place} alt="company" />
             <h1>About Us</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

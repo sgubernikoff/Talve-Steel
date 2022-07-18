@@ -5,6 +5,7 @@ import Product from "./Product";
 import Feature from "./Feature";
 import Contact from "./Contact";
 import About from "./About";
+import Conversions from "./Conversions";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path={"/products"} element={<Product />} />
         <Route exact path={"/contact"} element={<Contact />} />
         <Route exact path={"/feature"} element={<Feature />} />
+        <Route exact path={"/conversions"} element={<Conversions />} />
         <Route exact path={"/about"} element={<About />} />
       </Routes>
     </div>
