@@ -33,9 +33,7 @@ function Navbar() {
         <NavLink onClick={myFunction} to="/contact">
           Contact
         </NavLink>
-        <NavLink onClick={myFunction} to="/feature">
-          ******
-        </NavLink>
+
         <a to="javascript:void(0);" className="icon" onClick={myFunction}>
           <i className="fa fa-bars"></i>
         </a>

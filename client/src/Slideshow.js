@@ -5,15 +5,15 @@ import "react-slideshow-image/dist/styles.css";
 const slideImages = [
   {
     url: "https://i0.wp.com/thenybbgroup.com/wp-content/uploads/2019/09/Photo-from-Kyle-for-Web.jpg?fit=1920%2C1200&ssl=1",
-    caption: "Steel",
+    caption: "Stainless Steel",
   },
   {
-    url: "https://metrosteelusa.com/wp-content/uploads/2021/11/metal-pipes-2021-09-24-03-51-48-utc-scaled-e1635867365662.jpg",
-    caption: "Onyx",
+    url: "https://media.istockphoto.com/photos/cold-rolled-steel-coil-at-storage-area-in-steel-industry-picture-id636362104?k=20&m=636362104&s=612x612&w=0&h=2w4DnY8BMw9_xsCigO1tsDos1zaEUdM7Qy-U6x6sRIQ=",
+    caption: "Steel Coils",
   },
   {
-    url: "https://www.metalcenternews.com/images/featured/8d69bce2474d26d_c8a7ea71_da0d184f.jpg",
-    caption: "Market Influence",
+    url: "https://t4.ftcdn.net/jpg/04/99/11/31/360_F_499113133_fN7NwLrHBksRHN79vkzrAHFvIvhUBV6X.jpg",
+    caption: "Quality Assured",
   },
 ];
 
