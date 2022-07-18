@@ -159,7 +159,7 @@ span {
   display: flex;
   margin: auto;
   width: 65%;
-  /* background-color: rgb(255, 255, 233);
+  /* background-color: white;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(138, 140, 145);
@@ -192,7 +192,7 @@ span {
   flex-direction: column;
   margin: auto;
   width: 75%;
-  background-color: rgb(255, 255, 233);
+  background-color: white;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(138, 140, 145);
@@ -226,7 +226,7 @@ button {
   border-radius: 8px;
   width: 14vh;
   background-color: black;
-  color: rgb(255, 255, 233);
+  color: white;
   font-size: 2vh;
   margin-bottom: 1%;
   margin-top: -1vh;
@@ -274,7 +274,7 @@ button {
   width: 28vw;
   text-align: center;
   padding: 1%;
-  background-color: rgb(255, 255, 233);
+  background-color: white;
 }
 
 .star-container {
@@ -294,7 +294,7 @@ button {
   flex-direction: row;
   margin: auto;
   width: 100%;
-  background-color: rgb(255, 255, 233);
+  background-color: white;
   /* border-style: solid;
   border-width: 2px;
   border-color: rgb(138, 140, 145);
@@ -360,7 +360,7 @@ button {
   border: black solid 0.1vw;
   border-radius: 5px;
   margin-bottom: 2%;
-  background-color: rgb(255, 255, 233);
+  background-color: white;
   box-shadow: 0.15vw 0.15vw #6e6e6e;
 }
 .team-member-card img {
