@@ -8,7 +8,7 @@ const slideImages = [
     caption: "Stainless Steel",
   },
   {
-    url: "https://media.istockphoto.com/photos/cold-rolled-steel-coil-at-storage-area-in-steel-industry-picture-id636362104?k=20&m=636362104&s=612x612&w=0&h=2w4DnY8BMw9_xsCigO1tsDos1zaEUdM7Qy-U6x6sRIQ=",
+    url: "https://gisp.com/wp-content/uploads/2020/12/stainless-steel-price-in-china.jpg",
     caption: "Steel Coils",
   },
   {
