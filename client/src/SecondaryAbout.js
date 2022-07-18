@@ -7,24 +7,22 @@ function SecondaryAbout() {
       <div className="para_hold">
         <div className="paragraph">
           <p>
-            Dai Ichi USA, Ltd. has a tradition that is over 50 years in the
-            Steel business. The Gelbart family's first foray in steel was in the
-            1960's exporting carbon steel and stainless steel to Asia, South
-            America, Europe and the Middle East. In the early 1970’s the focus
-            of the business changed to stainless steel, specializing in grades
-            for the kitchen equipment, automotive trim, pipe and tubing as well
-            as automotive exhaust systems. With this change also came
-            distribution in North America. The business flourished through the
-            dynamic relationships that were built with the producers and
-            customers.
+            The core of our business is our customers. Our promise has always
+            been to work harder and smarter to bring our customers the best
+            quality and most reliable materials in the industry, and our
+            reputation has been built on meeting that promise – day in and day
+            out. By keeping our eye on the customer, we’ve been able to create
+            an effective approach to buying and selling steel that results in
+            discounted pricing combined with top-level service.
           </p>
            {" "}
           <p>
-            Over the years, Dai Ichi USA, Ltd. has solidified these
-            relationships which have been built on the integrity of the officers
-            and staff. Today, with distribution locations world wide and offices
-            in strategic locations, Dai Ichi has continued to serve the needs of
-            our customers throughout the world.
+            And it’s that commitment that drives us to create long-standing and
+            valuable relationships with domestic mills and in overseas markets
+            to offer a reliable and extensive supply chain of prime, excess, and
+            secondary steel for your needs. When you’re looking to buy steel or
+            sell steel, we’re positioned to give you the best price while
+            meeting your supply needs.
           </p>
         </div>
       </div>
