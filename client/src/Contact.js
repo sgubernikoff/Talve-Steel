@@ -6,7 +6,24 @@ function Contact() {
     <div className="contacts">
       <img className="contact_banner" src={contact} alt="contact-banner" />
       <div className="contact-form-container">
-        <div className="contact-form-left"></div>
+        <div className="contact-form-left">
+          <div className="contact_text_holder">
+            <h3 className="align_left_1">Reach Us</h3>
+            <h3 className="align_left">999-999-9999</h3>
+          </div>
+          <div className="contact_text_holder_1">
+            <p>We would to hear from you! What can we help you with today?</p>
+          </div>
+
+          <div className="contact_text_holder_2">
+            <h4 className="h_line_height">Corporate Office</h4>
+            <p>Address</p>
+            <p>Address2</p>
+            <p>City, State, Zip</p>
+            <p>Phone Number</p>
+            <p>Fax Number</p>
+          </div>
+        </div>
         <div className="contact-form-right">
           <form
             id="my-form"
@@ -64,6 +81,7 @@ function Contact() {
               />
             </div>
             <br />
+
             <button className="submit" type="submit">
               {" "}
               Submit{" "}

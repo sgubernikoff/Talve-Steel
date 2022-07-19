@@ -20,7 +20,7 @@ function Financial() {
           <br></br>
           <div className="inquire">
             <h2 className="methods">For any financial inquires:</h2>
-            <button>Contact Us</button>
+            <button className="finance_button">Contact Us</button>
           </div>
         </div>
       </div>
