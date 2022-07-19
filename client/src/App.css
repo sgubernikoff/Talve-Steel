@@ -414,3 +414,70 @@ h1 {
 .slogan {
   font-size: 175%;
 }
+
+.contact_banner {
+  width: 100%;
+  border-bottom: 6px solid black;
+}
+
+.contact-form-container {
+  display: flex;
+  margin-top: 4%;
+}
+
+.contact-form-left {
+  width: 30%;
+}
+
+.contact-form-right {
+  width: 70%;
+}
+
+.contact-form-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.contact-form-right button {
+  margin: auto;
+}
+
+.contact-form-right input textarea {
+  width: 90%;
+}
+
+.contact-form-name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact-form-name-input {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+}
+
+.contact-form-name-input label {
+  text-align: left;
+  font-size: 1em;
+}
+
+.contact-form-email-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form-email-container label {
+  width: fit-content;
+  font-size: 1em;
+}
+
+.submit {
+  width: 15%;
+  font-size: 1.2vw;
+}
