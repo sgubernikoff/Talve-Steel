@@ -12,7 +12,7 @@ function Home() {
       <Slideshow />
       <SecondaryAbout />
       <Financial />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactUs />
     </div>
   );

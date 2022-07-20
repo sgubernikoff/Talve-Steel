@@ -11,7 +11,7 @@ function ContactUs() {
             <img src={steelwork} alt="steel worker" />
           </div>
           <div className="contactUs2">
-            <h1>Talve Metals</h1>
+            <h1>Anchor Stainless</h1>
             <p>TEL: +(1)-555-555-5555</p>
             <p>FAX: +(1)-555-555-5555</p>
             <div>

@@ -4,7 +4,13 @@ import contact from "./contact.png";
 function Contact() {
   return (
     <div className="contacts">
-      <img className="contact_banner" src={contact} alt="contact-banner" />
+      <div className="new_banner2">
+        <div className="banner_text">
+          <h4 className="subhead">CONTACT</h4>
+          <h2 className="mainhead">GET IN TOUCH</h2>
+        </div>
+      </div>
+      {/* <img className="contact_banner" src={contact} alt="contact-banner" /> */}
       <div className="contact-form-container">
         <div className="contact-form-left">
           <div className="contact_text_holder">

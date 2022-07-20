@@ -25,7 +25,13 @@ function About() {
   };
   return (
     <div>
-      <img className="contact_banner" src={about} alt="contact-banner" />
+      <div className="new_banner">
+        <div className="banner_text">
+          <h4 className="subhead">ABOUT US</h4>
+          <h2 className="mainhead">MEET THE TEAM</h2>
+        </div>
+      </div>
+      {/* <img className="contact_banner" src={about} alt="contact-banner" /> */}
       <h1 className="slogan">**INSERT SLOGAN HERE**</h1>
       <div className="about">
         <div className="leftside">
