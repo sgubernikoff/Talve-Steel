@@ -1,15 +1,11 @@
 import React from "react";
-import steelwork from "./steelwork.jpeg";
 
 function ContactUs() {
   return (
     <div className="financial">
       <div>
-        {/* <h1 className="whom">Contact Information</h1> */}
         <div className="contact">
-          <div className="contactUs1">
-            <img src={steelwork} alt="steel worker" />
-          </div>
+          <div className="contactUs1"></div>
           <div className="contactUs2">
             <h1>Anchor Stainless</h1>
             <p>TEL: +(1)-555-555-5555</p>
