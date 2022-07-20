@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "./contact.jpeg";
+import contact from "./contact.png";
 
 function Contact() {
   return (

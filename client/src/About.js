@@ -2,6 +2,7 @@ import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
 import profile from "./profile.jpeg";
 import place from "./placehold.png";
+import about from "./about.png";
 
 function About() {
   const boss = {
@@ -24,6 +25,7 @@ function About() {
   };
   return (
     <div>
+      <img className="contact_banner" src={about} alt="contact-banner" />
       <h1 className="slogan">**INSERT SLOGAN HERE**</h1>
       <div className="about">
         <div className="leftside">

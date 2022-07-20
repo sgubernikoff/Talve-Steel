@@ -416,8 +416,8 @@ h1 {
 }
 
 .contact_banner {
+  height: 60vh;
   width: 100%;
-  border-bottom: 7px solid black;
 }
 
 .contact-form-container {
