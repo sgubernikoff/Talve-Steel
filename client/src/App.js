@@ -6,6 +6,7 @@ import Feature from "./Feature";
 import Contact from "./Contact";
 import About from "./About";
 import Conversions from "./Conversions";
+import Footer from "./Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path={"/conversions"} element={<Conversions />} />
         <Route exact path={"/about"} element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

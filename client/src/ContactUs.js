@@ -8,6 +8,7 @@ function ContactUs() {
           <div className="contactUs1"></div>
           <div className="contactUs2">
             <h1>Anchor Stainless</h1>
+            <p>EMAIL: xxxxxxxxxxx@gmail.com</p>
             <p>TEL: +(1)-555-555-5555</p>
             <p>FAX: +(1)-555-555-5555</p>
             <div>
