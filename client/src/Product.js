@@ -1,6 +1,13 @@
 import React from "react";
+import ProductCard from "./ProductCard";
 
 function Product() {
+  const products = {
+    name: "Product Name",
+    price: "$10.99",
+    image:
+      "https://st3.depositphotos.com/8069272/35760/v/380/depositphotos_357601916-stock-illustration-realistic-paper-box-mockup-packaging.jpg?forcejpeg=true",
+  };
   return (
     <div className="product">
       <div className="new_banner4">
@@ -10,6 +17,16 @@ function Product() {
         </div>
       </div>
       <h1>List of products mapped out here</h1>
+      <div className="product_hold">
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+        <ProductCard products={products} />
+      </div>
     </div>
   );
 }

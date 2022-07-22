@@ -635,3 +635,28 @@ textarea.form {
   background-color: rgb(231, 231, 231);
   font-family: serif;
 }
+
+.product_hold {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.prod_image {
+  width: 25vh;
+}
+.prod_name {
+  font-family: serif;
+  font-weight: normal;
+  font-size: 1.75vh;
+  margin-top: -1.5%;
+  text-align: left;
+}
+.prod_text {
+  font-family: serif;
+  font-weight: normal;
+  font-size: 1.5vh;
+  margin-top: -5.5%;
+  text-align: left;
+}
