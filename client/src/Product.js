@@ -16,7 +16,6 @@ function Product() {
           <h2 className="mainhead">VIEW INVENTORY</h2>
         </div>
       </div>
-      <h1>List of products mapped out here</h1>
       <div className="product_hold">
         <ProductCard products={products} />
         <ProductCard products={products} />

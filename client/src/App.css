@@ -641,6 +641,7 @@ textarea.form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 5%;
 }
 
 .prod_image {
