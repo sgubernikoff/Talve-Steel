@@ -37,16 +37,17 @@
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: white;
-  color: rgb(0, 0, 0);
+  color: grey;
   font-family: serif;
+  /* text-decoration: underline; */
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   /* background-color: rgb(0, 0, 0); */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: black;
-  color: black;
+  /* color: black; */
   font-family: serif;
 }
 
