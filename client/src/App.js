@@ -22,6 +22,9 @@ function App() {
         <Route exact path={"/about"} element={<About />} />
       </Routes>
       <Footer />
+      <div className="copyright">
+        <p>COPYRIGHT 2022. ALL RIGHTS RESERVED.</p>
+      </div>
     </div>
   );
 }

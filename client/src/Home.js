@@ -13,7 +13,7 @@ function Home() {
       <SecondaryAbout />
       <Financial />
       {/* <Testimonials /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
     </div>
   );
 }
