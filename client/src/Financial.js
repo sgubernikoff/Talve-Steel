@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Financial() {
+  const navigate = useNavigate();
+
+  function toNavigate() {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className="financial">
       <div>
@@ -20,7 +28,9 @@ function Financial() {
           <br></br>
           <div className="inquire">
             <h2 className="methods">For any financial inquires:</h2>
-            <button className="finance_button">Contact Us</button>
+            <button onClick={toNavigate} className="finance_button">
+              Contact Us
+            </button>
           </div>
         </div>
       </div>
