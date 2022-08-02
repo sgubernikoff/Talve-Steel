@@ -662,3 +662,10 @@ textarea.form {
   margin-top: -5.5%;
   text-align: left;
 }
+
+.row {
+  font-size: 2vh;
+  background-color: #000;
+  color: white;
+  border: white;
+}

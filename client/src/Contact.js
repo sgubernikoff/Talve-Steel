@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import contact from "./contact.png";
+import emailjs from "@emailjs/browser";
+
+const Result = () => {
+  return (
+    <p>Your message has been successfully sent. We will contact you soon!</p>
+  );
+};
 
 function Contact() {
+  const form = useRef();
+  const [result, showResult] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_opnnbkk",
+        "template_qnta5tg",
+        form.current,
+        "WPUweZAoXmamBd_kZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    showResult(true);
+  };
+
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
   return (
     <div className="contacts">
       <div className="new_banner2">
@@ -32,9 +67,10 @@ function Contact() {
         </div>
         <div className="contact-form-right">
           <form
-            id="my-form"
+            // id="my-form"
             // action={FORM_ENDPOINT}
-            // onSubmit={handleSubmit}
+            ref={form}
+            onSubmit={sendEmail}
             method="POST"
             target="_blank"
           >
@@ -45,7 +81,7 @@ function Contact() {
                   className="form"
                   type="text"
                   // placeholder="Your name"
-                  name="name"
+                  name="firstname"
                   required
                   size={40}
                 />
@@ -56,7 +92,7 @@ function Contact() {
                   className="form"
                   type="text"
                   // placeholder="Your name"
-                  name="name"
+                  name="lastname"
                   required
                   size={40}
                 />
@@ -92,6 +128,7 @@ function Contact() {
               {" "}
               Submit{" "}
             </button>
+            <div className="row">{result ? <Result /> : null}</div>
           </form>
         </div>
       </div>
