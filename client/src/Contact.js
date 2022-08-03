@@ -11,32 +11,40 @@ const Result = () => {
 function Contact() {
   const form = useRef();
   const [result, showResult] = useState(false);
+  const [first, setFirst] = useState("");
+  const [last, setLast] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const formData = new FormData();
+  formData.append("first", first);
+  formData.append("last", last);
+  formData.append("email", email);
+  formData.append("message", message);
+
+  function clearFields() {
+    setFirst("");
+    setLast("");
+    setEmail("");
+    setMessage("");
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_opnnbkk",
-        "template_qnta5tg",
-        form.current,
-        "WPUweZAoXmamBd_kZ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    showResult(true);
+    fetch("/send_email", {
+      method: "POST",
+      body: formData,
+    }).then((r) => {
+      if (r.ok) {
+        showResult(true);
+        clearFields();
+        setTimeout(() => {
+          showResult(false);
+        }, 5000);
+      }
+    });
   };
 
-  setTimeout(() => {
-    showResult(false);
-  }, 5000);
   return (
     <div className="contacts">
       <div className="new_banner2">
@@ -84,6 +92,8 @@ function Contact() {
                   name="firstname"
                   required
                   size={40}
+                  value={first}
+                  onChange={(e) => setFirst(e.target.value)}
                 />
               </div>
               <div className="contact-form-name-input">
@@ -95,6 +105,8 @@ function Contact() {
                   name="lastname"
                   required
                   size={40}
+                  value={last}
+                  onChange={(e) => setLast(e.target.value)}
                 />
               </div>
             </div>
@@ -108,6 +120,8 @@ function Contact() {
                 name="email"
                 required
                 size={94}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <br />
@@ -120,6 +134,8 @@ function Contact() {
                 required
                 cols={77}
                 rows={15}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
             <br />
