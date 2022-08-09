@@ -6,7 +6,7 @@ class SendEmailMailer < ApplicationMailer
         @first = params[:first]
         @last = params[:last]
         @body = params[:message]
-        mail(to:@email, subject:'New Message')
+        mail(:to=>['larry@ykgrp.com','zack@ykgrp.com'], subject:'New Message')
     end
 
     def thank_you_email
