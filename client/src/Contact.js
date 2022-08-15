@@ -84,7 +84,7 @@ function Contact() {
           >
             <div className="contact-form-name-container">
               <div className="contact-form-name-input">
-                <label>First Name *</label>
+                <label>First Name*</label>
                 <input
                   className="form"
                   type="text"
@@ -97,7 +97,7 @@ function Contact() {
                 />
               </div>
               <div className="contact-form-name-input">
-                <label>Last Name *</label>
+                <label>Last Name*</label>
                 <input
                   className="form"
                   type="text"
@@ -112,7 +112,7 @@ function Contact() {
             </div>
             <br />
             <div className="contact-form-email-container">
-              <label>Email *</label>
+              <label>Email*</label>
               <input
                 className="form"
                 type="email"
@@ -126,7 +126,7 @@ function Contact() {
             </div>
             <br />
             <div className="contact-form-email-container">
-              <label>Message *</label>
+              <label>Message*</label>
               <textarea
                 className="form"
                 // placeholder="Your message"
@@ -146,6 +146,7 @@ function Contact() {
             </button>
             <div className="row">{result ? <Result /> : null}</div>
           </form>
+          <p>*-Required</p>
         </div>
       </div>
     </div>
