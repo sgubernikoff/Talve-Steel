@@ -17,11 +17,11 @@ function Footer() {
 
         <div className="footer-contact">
           {/* <h3>Contact Us</h3> */}
-          <p>PO Box 000, 000 1st Street</p>
-          <p>XXXXXXXXXXXXXX, NY 00000, USA</p>
-          <p>EMAIL: xxxxxxxxxxx@gmail.com</p>
-          <p>TEL: +(1)-555-555-5555</p>
-          <p>FAX: +(1)-555-555-5555</p>
+          <p>30 West 63rd Street</p>
+          <p>New York, NY 10023</p>
+          <p>xxxxxxxxxxx@gmail.com</p>
+          <p>+(1)-516-721-4603</p>
+          {/* <p>FAX: +(1)-555-555-5555</p> */}
         </div>
         {/* <div className="footer-follow">
         <h3>Follow Us</h3>

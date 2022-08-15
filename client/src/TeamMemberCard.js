@@ -19,9 +19,10 @@ function TeamMemberCard({ teamMember }) {
         <p className="info-card-text">{teamMember.phone}</p>
       </div>
       <br></br>
-      <br></br>
-
-      <p className="info-card-text">{teamMember.blurb}</p>
+      {/* <br></br> */}
+      <div className="info-card-text-blurb">
+        <p className="info-card-text">{teamMember.blurb}</p>
+      </div>
     </div>
   );
 }

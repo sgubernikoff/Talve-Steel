@@ -1,7 +1,7 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
-import profile from "./profile.jpeg";
-import place from "./placehold.png";
+import zach from "./zach.png";
+import talvesteel2 from "./talvesteel2.jpg";
 import about from "./about.png";
 
 function About() {
@@ -10,7 +10,7 @@ function About() {
     name: "Larry Talve",
     jobTitle: "President",
     experience: 25,
-    image: profile,
+    image: zach,
     email: "email@email.com",
     phone: "+1-(516)-721-4603",
     blurb: "Larry blurb",
@@ -20,10 +20,11 @@ function About() {
     name: "Zachary Talve",
     jobTitle: "Vice President",
     experience: 5,
-    image: profile,
+    image: zach,
     email: "email@email.com",
     phone: "‭+1-(516)-974-5707‬",
-    blurb: "Zack blurb",
+    blurb:
+      "Zachary attended the University of Michigan and graduated in 2018. Prior to founding Anchor Stainless in 2022, Zack has built an extensive resume in the Real Estate world. He worked as a commercial real estate broker for two years with a focus in office leasing and acquisitions. He also worked as a real estate appraiser and earned his Master’s degree in Real Estate from New York University prior to making the transition to Anchor Stainless. Zack utilized his experience in real estate sales to help transition to the role of heading up the sales team at Anchor Stainless.  His passion for the stainless steel industry stems from the family business started by his Grandfather, Jack, and continued on by Larry.  Zack, along with Larry, founded Anchor Stainless with the goal of providing efficient services and quality material to the USA stainless steel market.",
   };
   return (
     <div>
@@ -38,7 +39,7 @@ function About() {
       <div className="about">
         <div className="leftside">
           <div className="about-image-container">
-            <img src={place} alt="company" />
+            <img src={talvesteel2} alt="company" />
             <h1>About Us</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -77,7 +78,6 @@ function About() {
         </div>
         <div className="right">
           <div className="container-team">
-            <br></br>
             <div className="about-boss-container">
               <TeamMemberCard teamMember={boss} />
             </div>

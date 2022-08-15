@@ -58,19 +58,21 @@ function Contact() {
         <div className="contact-form-left">
           <div className="contact_text_holder">
             <h3 className="align_left_1">Reach Us</h3>
-            <h3 className="align_left">999-999-9999</h3>
+            <h3 className="align_left">(516)-721-4603</h3>
           </div>
           <div className="contact_text_holder_1">
-            <p>We would to hear from you! What can we help you with today?</p>
+            <p>
+              We would love to hear from you! What can we help you with today?
+            </p>
           </div>
 
           <div className="contact_text_holder_2">
             <h4 className="h_line_height">Corporate Office</h4>
-            <p>Address</p>
-            <p>Address2</p>
-            <p>City, State, Zip</p>
-            <p>Phone Number</p>
-            <p>Fax Number</p>
+            <p>30 West 63rd Street</p>
+            {/* <p>Address2</p> */}
+            <p>New York, NY 10023</p>
+            <p>(516)-721-4603</p>
+            {/* <p>Fax Number</p> */}
           </div>
         </div>
         <div className="contact-form-right">
@@ -146,7 +148,7 @@ function Contact() {
             </button>
             <div className="row">{result ? <Result /> : null}</div>
           </form>
-          <p>*-Required</p>
+          {/* <p>*-Required</p> */}
         </div>
       </div>
     </div>

@@ -361,14 +361,14 @@ span {
   width: 75%;
   border: black solid 0.1vw;
   border-radius: 5px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   background-color: white;
   box-shadow: 0.15vw 0.15vw #6e6e6e;
 }
 .team-member-card img {
   width: 33%;
   border: black solid 1px;
-  border-radius: 80px;
+  border-radius: 100%;
   margin-bottom: 3%;
 }
 
@@ -403,8 +403,8 @@ h1 {
 .container-team {
   border-radius: 2vw;
   margin-right: 5%;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0.35vw 0.35vw #6e6e6e;
+  /* background-color: rgb(255, 255, 255);
+  box-shadow: 0.35vw 0.35vw #6e6e6e; */
   margin-bottom: 5%;
 }
 
@@ -415,6 +415,11 @@ h1 {
 .info-card-text,
 .experience {
   font-size: 1.65vw;
+}
+
+.info-card-text-blurb {
+  width: 85%;
+  margin: auto;
 }
 
 .slogan {
@@ -618,7 +623,11 @@ textarea.form {
   flex-direction: row;
   /* padding-bottom: 2%; */
   /* text-align: left; */
-  font-size: 1.155vw;
+  font-size: 1.6vw;
+}
+
+.footer p {
+  line-height: 50%;
 }
 
 /* .footer-quick-links,
