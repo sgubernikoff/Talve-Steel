@@ -7,21 +7,23 @@ import about from "./about.png";
 function About() {
   const boss = {
     isBoss: true,
-    name: "Boss",
-    jobTitle: "Owner",
+    name: "Larry Talve",
+    jobTitle: "President",
     experience: 25,
     image: profile,
     email: "email@email.com",
-    phone: "999-999-9999",
+    phone: "+1-(516)-721-4603",
+    blurb: "Larry blurb",
   };
   const teamMember = {
     isBoss: false,
-    name: "Name",
-    jobTitle: "Employee",
+    name: "Zachary Talve",
+    jobTitle: "Vice President",
     experience: 5,
     image: profile,
     email: "email@email.com",
-    phone: "999-999-9999",
+    phone: "‭+1-(516)-974-5707‬",
+    blurb: "Zack blurb",
   };
   return (
     <div>
@@ -32,7 +34,7 @@ function About() {
         </div>
       </div>
       {/* <img className="contact_banner" src={about} alt="contact-banner" /> */}
-      <h1 className="slogan">**INSERT SLOGAN HERE**</h1>
+      <h1 className="slogan">Anchor Stainless - A New Generation</h1>
       <div className="about">
         <div className="leftside">
           <div className="about-image-container">
@@ -70,24 +72,6 @@ function About() {
               orci dapibus. Ullamcorper eget nulla facilisi etiam. Quam viverra
               orci sagittis eu volutpat odio. Malesuada fames ac turpis egestas
               integer eget aliquet. In nibh mauris cursus mattis molestie a.
-              <br />
-              <br /> Varius duis at consectetur lorem donec. Eget nunc
-              scelerisque viverra mauris in aliquam sem fringilla ut. Adipiscing
-              elit pellentesque habitant morbi tristique senectus et. Hac
-              habitasse platea dictumst quisque sagittis purus sit amet
-              volutpat. Aenean sed adipiscing diam donec adipiscing tristique
-              risus nec feugiat. Lobortis scelerisque fermentum dui faucibus in
-              ornare quam viverra orci. At in tellus integer feugiat
-              scelerisque. Pretium nibh ipsum consequat nisl. Felis eget nunc
-              lobortis mattis aliquam faucibus purus. Neque egestas congue
-              quisque egestas diam in arcu cursus. Eu ultrices vitae auctor eu
-              augue ut lectus arcu. Facilisis volutpat est velit egestas dui id
-              ornare. Gravida dictum fusce ut placerat orci nulla. Eu sem
-              integer vitae justo eget magna. Ut ornare lectus sit amet est
-              placerat. Et ligula ullamcorper malesuada proin libero. Commodo
-              elit at imperdiet dui accumsan sit. Et leo duis ut diam. Vel eros
-              donec ac odio. Adipiscing elit duis tristique sollicitudin nibh
-              sit amet commodo. Integer quis auctor elit sed vulputate.
             </p>
           </div>
         </div>
@@ -98,11 +82,6 @@ function About() {
               <TeamMemberCard teamMember={boss} />
             </div>
             <div className="about-team-members-container">
-              <TeamMemberCard teamMember={teamMember} />
-              <TeamMemberCard teamMember={teamMember} />
-              <TeamMemberCard teamMember={teamMember} />
-              <TeamMemberCard teamMember={teamMember} />
-              <TeamMemberCard teamMember={teamMember} />
               <TeamMemberCard teamMember={teamMember} />
             </div>
             <br></br>

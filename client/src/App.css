@@ -355,7 +355,7 @@ span {
 }
 
 .team-member-card {
-  width: 40%;
+  width: 75%;
   border: black solid 0.1vw;
   border-radius: 5px;
   margin-bottom: 2%;
@@ -366,6 +366,10 @@ span {
   width: 33%;
   border: black solid 1px;
   border-radius: 80px;
+  margin-bottom: 3%;
+}
+
+.top_about_info p {
   margin-bottom: 3%;
 }
 
@@ -411,7 +415,8 @@ h1 {
 }
 
 .slogan {
-  font-size: 175%;
+  font-size: 220%;
+  font-style: italic;
 }
 
 .contact_banner {
