@@ -67,7 +67,7 @@ Rails.application.configure do
 # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
-    :domain               => "smtp.gmail.com",
+    :domain               => "gmail.com",
     :port                 => 587,
     :user_name            => ENV['SMTP_USER_NAME'],
     :password             => ENV['SMTP_PASSWORD'],
