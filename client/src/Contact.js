@@ -31,7 +31,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    fetch("/send_email", {
+    fetch("/emails", {
       method: "POST",
       body: formData,
     }).then((r) => {
