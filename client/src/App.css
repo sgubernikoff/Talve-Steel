@@ -693,4 +693,6 @@ textarea.form {
   background-color: #000;
   color: white;
   border: white;
+  text-align: center;
+  margin: auto;
 }
