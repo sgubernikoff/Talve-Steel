@@ -521,11 +521,11 @@ textarea.form {
 }
 
 .contact_text_holder {
-  width: 80%;
-  margin: auto;
+  width: 100%;
   text-align: left;
   line-height: 0.75vh;
-  margin-top: 0.35vh;
+  /* margin: 0.35vh 5.5vh 1vh; */
+  margin-left: 10%;
 }
 
 .align_left {
@@ -540,7 +540,7 @@ textarea.form {
 }
 
 .contact_text_holder_1 {
-  width: 80%;
+  width: 70%;
   margin: auto;
   text-align: left;
   font-size: 2vh;
@@ -548,14 +548,16 @@ textarea.form {
   /* margin-top: -10%;
   margin-bottom: -10%; */
   font-style: italic;
+  margin-left: 10%;
 }
 
 .contact_text_holder_2 {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: left;
   font-size: 2vh;
   line-height: 1vh;
+  margin-left: 10%;
 }
 
 .h_line_height {
