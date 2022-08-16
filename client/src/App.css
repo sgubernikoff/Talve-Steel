@@ -625,7 +625,7 @@ textarea.form {
   flex-direction: row;
   /* padding-bottom: 2%; */
   /* text-align: left; */
-  font-size: 1.6vw;
+  font-size: 100%;
 }
 
 .footer p {
@@ -661,7 +661,8 @@ textarea.form {
 .copyright {
   background-color: rgb(231, 231, 231);
   font-family: serif;
-  font-size: 1.155vw;
+  font-size: 75%;
+  margin-bottom: 2%;
 }
 
 .product_hold {
