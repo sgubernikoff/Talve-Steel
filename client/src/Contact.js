@@ -31,7 +31,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    fetch("/emails", {
+    fetch("https://anchorstainless.herokuapp.com/emails", {
       method: "POST",
       body: formData,
     }).then((r) => {
