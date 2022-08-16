@@ -61,12 +61,13 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
-  host = 'anchorstainless.herokuapp.com' #replace with your own url
+  host = 'smtp.gmail.com' #replace with your own url
   config.action_mailer.default_url_options = { host: host, :protocol => 'http' }
 
 # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
+    :domain               => "smtp.gmail.com",
     :port                 => 587,
     :user_name            => ENV['SMTP_USER_NAME'],
     :password             => ENV['SMTP_PASSWORD'],
