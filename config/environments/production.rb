@@ -69,8 +69,8 @@ Rails.application.configure do
     :address              => "smtp.gmail.com",
     :domain               => "anchorstainless.herokuapp.com",
     :port                 => 587,
-    :user_name            => ENV['SMTP_USER_NAME'],
-    :password             => ENV['SMTP_PASSWORD'],
+    :user_name            => ENV.fetch("SMTP_USER_NAME"),
+    :password             => ENV.fetch('SMTP_PASSWORD'),
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
