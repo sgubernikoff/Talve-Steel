@@ -370,6 +370,7 @@ span {
   border: black solid 1px;
   border-radius: 100%;
   margin-bottom: 3%;
+  /* clip-path: circle(); */
 }
 
 .top_about_info p {
