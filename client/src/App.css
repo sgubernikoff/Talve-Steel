@@ -602,6 +602,16 @@ textarea.form {
   display: flex;
 }
 
+@media screen and (max-width: 660px) {
+  .new_banner,
+  .each-slide > div,
+  .new_banner2,
+  .new_banner3,
+  .new_banner4 {
+    height: 35vh;
+  }
+}
+
 .banner_text {
   margin: auto;
   font-family: serif;
@@ -700,4 +710,35 @@ textarea.form {
   border: white;
   text-align: center;
   margin: auto;
+}
+
+.table_product {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+table {
+  /* border: 2px solid forestgreen; */
+  width: 80%;
+
+  border-collapse: collapse;
+}
+
+th {
+  border: 0.12em solid black;
+  /* padding: 1%; */
+  text-align: center;
+  font-size: 2.25vw;
+}
+
+td {
+  text-align: center;
+  border: 0.12em solid black;
+  /* padding: 1%; */
+  text-align: center;
+  font-size: 2vw;
 }
