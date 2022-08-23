@@ -366,11 +366,12 @@ span {
   box-shadow: 0.15vw 0.15vw #6e6e6e;
 }
 .team-member-card img {
-  width: 33%;
-  border: black solid 1px;
-  border-radius: 100%;
-  margin-bottom: 3%;
-  /* clip-path: circle(); */
+  width: 30%;
+  /* border: black solid 1px; */
+  /* border-radius: 0%; */
+  margin-bottom: -1%;
+  margin-top: -3%;
+  clip-path: circle();
 }
 
 .top_about_info p {
