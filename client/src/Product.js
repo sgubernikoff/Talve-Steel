@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import TableRow from "./TableRow";
+import Overlay from "./Overlay";
 // import ProductCard from "./ProductCard";
 
 function Product() {
@@ -47,20 +48,24 @@ function Product() {
           <h2 className="mainhead">VIEW INVENTORY</h2>
         </div>
       </div>
-      <div className="table_product">
-        <table>
-          <tr>
-            <th>No.</th>
-            <th>Grade</th>
-            <th>Commodities & Specification (MM)</th>
-            <th>Net Weight (KGs)</th>
-            <th>Gross Weight (KGs)</th>
-            <th>Quantity</th>
-            <th>Pkgs</th>
-          </tr>
-          {tableRow}
-        </table>
-      </div>
+      {!user ? (
+        <div className="table_product">
+          <table>
+            <tr>
+              <th>No.</th>
+              <th>Grade</th>
+              <th>Commodities & Specification (MM)</th>
+              <th>Net Weight (KGs)</th>
+              <th>Gross Weight (KGs)</th>
+              <th>Quantity</th>
+              <th>Pkgs</th>
+            </tr>
+            {tableRow}
+          </table>
+        </div>
+      ) : (
+        <Overlay />
+      )}
       {/* <div className="product_hold">
         <ProductCard products={products} />
         <ProductCard products={products} />
