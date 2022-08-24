@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     end
 
     def update
-        user = User.find(session[:user_id])
+        user = User.find_by(username:params[:username])
         user.update!(user_update_params)
         render json: user
     end

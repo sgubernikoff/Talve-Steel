@@ -714,17 +714,13 @@ textarea.form {
 
 .table_product {
   width: 100%;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 3%;
 }
 
 table {
   /* border: 2px solid forestgreen; */
   width: 80%;
-
+  margin: auto;
   border-collapse: collapse;
 }
 

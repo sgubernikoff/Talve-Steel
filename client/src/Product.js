@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import TableRow from "./TableRow";
 import Overlay from "./Overlay";
+import EditRowForm from "./EditRowForm";
 // import ProductCard from "./ProductCard";
 
 function Product() {
@@ -13,6 +14,8 @@ function Product() {
 
   const [coils, setCoils] = useState([]);
   const [user, setUser] = useState("");
+  const [isEditing, setIsEditing] = useState(false);
+  const [formData, setFormData] = useState({});
 
   function handleLogin(user) {
     setUser(user);
@@ -35,14 +38,32 @@ function Product() {
   }
 
   useEffect(() => {
-    getCoils();
     getUser();
   }, []);
+
+  useEffect(() => {
+    getCoils();
+  }, [user]);
 
   console.log(coils);
   console.log(user);
 
-  const tableRow = coils.map((data) => <TableRow data={data} />);
+  const tableRow = coils.map((data) => <TableRow data={data} key={data.id} />);
+
+  function handleSubmit() {
+    fetch("/coils", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    }).then((r) => {
+      if (r.ok)
+        r.json().then((data) => {
+          setCoils([...coils, data]);
+          setIsEditing(false);
+        });
+      else r.json().then((data) => console.log(data.errors));
+    });
+  }
 
   return (
     <div className="product">
@@ -55,20 +76,38 @@ function Product() {
       {user ? (
         <div className="table_product">
           <table>
-            <tr>
-              <th>No.</th>
-              <th>Grade</th>
-              <th>Commodities & Specification (MM)</th>
-              <th>Net Weight (KGs)</th>
-              <th>Gross Weight (KGs)</th>
-              <th>Quantity</th>
-              <th>Pkgs</th>
-            </tr>
-            {tableRow}
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Grade</th>
+                <th>Commodities & Specification (MM)</th>
+                <th>Net Weight (KGs)</th>
+                <th>Gross Weight (KGs)</th>
+                <th>Quantity</th>
+                <th>Pkgs</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableRow}
+              {user.isAdmin && isEditing ? (
+                <EditRowForm setFormData={setFormData} />
+              ) : null}
+            </tbody>
           </table>
+          {user.isAdmin ? (
+            isEditing ? (
+              <>
+                <button onClick={() => handleSubmit()}>Confirm</button>
+                <button onClick={() => setIsEditing(false)}>Cancel</button>
+              </>
+            ) : (
+              <button onClick={() => setIsEditing(true)}>+</button>
+            )
+          ) : null}
+          {user.isAdmin ? <Overlay changePassword={true} /> : null}
         </div>
       ) : (
-        <Overlay handleLogin={handleLogin} />
+        <Overlay handleLogin={handleLogin} changePassword={false} />
       )}
       {/* <div className="product_hold">
         <ProductCard products={products} />
