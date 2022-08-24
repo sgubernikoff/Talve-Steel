@@ -27,7 +27,8 @@ class CoilsController < ApplicationController
     def destroy
         coil = Coil.find(params[:id])
         coil.destroy
-        head :no_content
+        # head :no_content
+        render json: coil, status: 200
     end
 
     private

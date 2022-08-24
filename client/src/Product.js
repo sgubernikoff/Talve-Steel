@@ -36,6 +36,15 @@ function Product() {
       } else res.json().then((err) => console.log(err));
     });
   }
+  function updateCoilsOnDeleteCoil(deletedCoil) {
+    const filteredCoils = coils.filter((c) => deletedCoil.id !== c.id);
+    setCoils(filteredCoils);
+  }
+
+  // function updateCoilsOnEditCoil(editedCoil) {
+  //   const filteredCoils = coils.filter((c) => editedCoil.id !== c.id);
+  //   setCoils(filteredCoils);
+  // }
 
   useEffect(() => {
     getUser();
@@ -48,7 +57,14 @@ function Product() {
   console.log(coils);
   console.log(user);
 
-  const tableRow = coils.map((data) => <TableRow data={data} key={data.id} />);
+  const tableRow = coils.map((data) => (
+    <TableRow
+      data={data}
+      user={user}
+      updateCoilsOnDeleteCoil={updateCoilsOnDeleteCoil}
+      key={data.id}
+    />
+  ));
 
   function handleSubmit() {
     fetch("/coils", {
@@ -101,7 +117,12 @@ function Product() {
                 <button onClick={() => setIsEditing(false)}>Cancel</button>
               </>
             ) : (
-              <button onClick={() => setIsEditing(true)}>+</button>
+              <button
+                className="update_button"
+                onClick={() => setIsEditing(true)}
+              >
+                +
+              </button>
             )
           ) : null}
           {user.isAdmin ? <Overlay changePassword={true} /> : null}

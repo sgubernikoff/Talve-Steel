@@ -722,6 +722,7 @@ table {
   width: 80%;
   margin: auto;
   border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
 }
 
 th {
@@ -737,6 +738,9 @@ td {
   /* padding: 1%; */
   text-align: center;
   font-size: 2vw;
+  white-space: nowrap;
+  table-layout: fixed;
+  width: 500px;
 }
 
 .overlay_form {
@@ -801,4 +805,12 @@ select {
   .overlay_form {
     width: 70%;
   }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.update_button {
+  margin-top: 1%;
 }
