@@ -12,7 +12,11 @@ function Product() {
   // };
 
   const [coils, setCoils] = useState([]);
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState("");
+
+  function handleLogin(user) {
+    setUser(user);
+  }
 
   function getCoils() {
     fetch("/coils").then((res) => {
@@ -48,7 +52,7 @@ function Product() {
           <h2 className="mainhead">VIEW INVENTORY</h2>
         </div>
       </div>
-      {!user ? (
+      {user ? (
         <div className="table_product">
           <table>
             <tr>
@@ -64,7 +68,7 @@ function Product() {
           </table>
         </div>
       ) : (
-        <Overlay />
+        <Overlay handleLogin={handleLogin} />
       )}
       {/* <div className="product_hold">
         <ProductCard products={products} />

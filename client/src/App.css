@@ -757,24 +757,52 @@ td {
   background-color: rgb(46, 45, 45);
 }
 
-input {
+.product_input {
   width: 50%;
   margin: auto;
   margin: 2.5%;
 }
 
-button {
+.product_button {
   width: 30%;
   margin: auto;
   margin: 1%;
 }
 
-label {
+.product_label {
   color: white;
 }
 
+select {
+  width: 15%;
+  text-align: center;
+}
+
 @media screen and (max-width: 660px) {
-  button {
+  .product_button {
     width: 61%;
+  }
+}
+
+.error_text {
+  color: white;
+}
+
+.invis_text {
+  color: rgb(46, 45, 45);
+}
+
+.head_text {
+  color: white;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 660px) {
+  select {
+    width: 30%;
+  }
+
+  .overlay_form {
+    width: 70%;
   }
 }
