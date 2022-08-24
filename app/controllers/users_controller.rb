@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid,with: :render_unprocessable_entity
     rescue_from ActiveRecord::RecordNotFound,with: :render_not_found
+    skip_before_action :is_logged_in?, only: [:show]
+    skip_before_action :is_admin_logged_in?
 
     def show
         user = User.find(session[:user_id])
