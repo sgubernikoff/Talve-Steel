@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import TableRow from "./TableRow";
 // import ProductCard from "./ProductCard";
 
 function Product() {
@@ -36,17 +37,7 @@ function Product() {
   console.log(coils);
   console.log(user);
 
-  const tableRow = coils.map((data) => (
-    <tr key={data.id}>
-      <td>{data.id}</td>
-      <td>{data.grade}</td>
-      <td>{data.com_spec}</td>
-      <td>{data.net}</td>
-      <td>{data.gross}</td>
-      <td>{data.quantity}</td>
-      <td>{data.pkgs}</td>
-    </tr>
-  ));
+  const tableRow = coils.map((data) => <TableRow data={data} />);
 
   return (
     <div className="product">
