@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-function EditRowForm({ setFormData }) {
-  const [grade, setGrade] = useState("");
-  const [com_spec, setComSpec] = useState("");
-  const [net, setNet] = useState("");
-  const [gross, setGross] = useState("");
-  const [quantity, setQuantity] = useState("");
-  const [pkgs, setPkgs] = useState("");
+function EditRowForm({ setFormData, data }) {
+  const [grade, setGrade] = useState(data.grade);
+  const [com_spec, setComSpec] = useState(data.com_spec);
+  const [net, setNet] = useState(data.net);
+  const [gross, setGross] = useState(data.gross);
+  const [quantity, setQuantity] = useState(data.quantity);
+  const [pkgs, setPkgs] = useState(data.pkgs);
 
   console.log(grade, com_spec, net, gross, quantity, pkgs);
 
@@ -24,7 +24,7 @@ function EditRowForm({ setFormData }) {
   }, [grade, com_spec, net, gross, quantity, pkgs]);
 
   return (
-    <tr>
+    <>
       <td></td>
       <td>
         <input
@@ -68,7 +68,7 @@ function EditRowForm({ setFormData }) {
           onChange={(e) => setPkgs(e.target.value)}
         ></input>
       </td>
-    </tr>
+    </>
   );
 }
 

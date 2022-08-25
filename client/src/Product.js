@@ -41,10 +41,11 @@ function Product() {
     setCoils(filteredCoils);
   }
 
-  // function updateCoilsOnEditCoil(editedCoil) {
-  //   const filteredCoils = coils.filter((c) => editedCoil.id !== c.id);
-  //   setCoils(filteredCoils);
-  // }
+  function updateCoilsOnEditCoil(editedCoil) {
+    const filteredCoils = coils.filter((c) => editedCoil.id !== c.id);
+    const updatedCoils = [...filteredCoils, editedCoil];
+    setCoils(updatedCoils);
+  }
 
   useEffect(() => {
     getUser();
@@ -62,6 +63,7 @@ function Product() {
       data={data}
       user={user}
       updateCoilsOnDeleteCoil={updateCoilsOnDeleteCoil}
+      updateCoilsOnEditCoil={updateCoilsOnEditCoil}
       key={data.id}
     />
   ));
@@ -106,7 +108,9 @@ function Product() {
             <tbody>
               {tableRow}
               {user.isAdmin && isEditing ? (
-                <EditRowForm setFormData={setFormData} />
+                <tr>
+                  <EditRowForm setFormData={setFormData} data={""} />
+                </tr>
               ) : null}
             </tbody>
           </table>
