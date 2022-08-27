@@ -814,3 +814,34 @@ select {
 .update_button {
   margin-top: 1%;
 }
+
+.error {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
+  animation: error 0.5s ease-out;
+}
+
+@keyframes error {
+  0% {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  25% {
+    margin-left: 9%;
+    margin-right: 10%;
+  }
+  50% {
+    margin-left: 10%;
+    margin-right: 9%;
+  }
+  75% {
+    margin-left: 9%;
+    margin-right: 10%;
+  }
+  100% {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

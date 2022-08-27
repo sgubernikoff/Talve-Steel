@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import TableRow from "./TableRow";
 import Overlay from "./Overlay";
 import EditRowForm from "./EditRowForm";
@@ -16,6 +16,8 @@ function Product() {
   const [user, setUser] = useState("");
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({});
+
+  const table = useRef(null);
 
   function handleLogin(user) {
     setUser(user);
@@ -55,8 +57,12 @@ function Product() {
     getCoils();
   }, [user]);
 
-  console.log(coils);
-  console.log(user);
+  function errorAnimation() {
+    table.current.className = "error";
+    setTimeout(() => {
+      table.current.className = "";
+    }, 550);
+  }
 
   const tableRow = coils.map((data) => (
     <TableRow
@@ -64,6 +70,7 @@ function Product() {
       user={user}
       updateCoilsOnDeleteCoil={updateCoilsOnDeleteCoil}
       updateCoilsOnEditCoil={updateCoilsOnEditCoil}
+      errorAnimation={errorAnimation}
       key={data.id}
     />
   ));
@@ -79,7 +86,11 @@ function Product() {
           setCoils([...coils, data]);
           setIsEditing(false);
         });
-      else r.json().then((data) => console.log(data.errors));
+      else
+        r.json().then((data) => {
+          console.log(data.errors);
+          errorAnimation();
+        });
     });
   }
 
@@ -93,7 +104,7 @@ function Product() {
       </div>
       {user ? (
         <div className="table_product">
-          <table>
+          <table ref={table}>
             <thead>
               <tr>
                 <th>No.</th>

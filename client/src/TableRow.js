@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import EditRowForm from "./EditRowForm";
 
 function TableRow({
@@ -6,6 +6,7 @@ function TableRow({
   user,
   updateCoilsOnDeleteCoil,
   updateCoilsOnEditCoil,
+  errorAnimation,
 }) {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({});
@@ -29,7 +30,11 @@ function TableRow({
           setIsEditing(false);
           updateCoilsOnEditCoil(data);
         });
-      else resp.json().then((data) => console.log(data.errors));
+      else
+        resp.json().then((data) => {
+          console.log(data.errors);
+          errorAnimation();
+        });
     });
   }
   return (

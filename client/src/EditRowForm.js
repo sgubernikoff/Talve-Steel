@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function EditRowForm({ setFormData, data }) {
   const [grade, setGrade] = useState(data.grade);
@@ -8,7 +8,7 @@ function EditRowForm({ setFormData, data }) {
   const [quantity, setQuantity] = useState(data.quantity);
   const [pkgs, setPkgs] = useState(data.pkgs);
 
-  console.log(grade, com_spec, net, gross, quantity, pkgs);
+  const firstInput = useRef(null);
 
   const formData = {
     grade: grade,
@@ -23,6 +23,10 @@ function EditRowForm({ setFormData, data }) {
     setFormData(formData);
   }, [grade, com_spec, net, gross, quantity, pkgs]);
 
+  useEffect(() => {
+    firstInput.current.focus();
+  }, []);
+
   return (
     <>
       <td></td>
@@ -30,6 +34,7 @@ function EditRowForm({ setFormData, data }) {
         <input
           type="text"
           value={grade}
+          ref={firstInput}
           onChange={(e) => setGrade(e.target.value)}
         ></input>
       </td>
