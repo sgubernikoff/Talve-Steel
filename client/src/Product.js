@@ -18,6 +18,7 @@ function Product() {
   const [formData, setFormData] = useState({});
 
   const table = useRef(null);
+  console.log(table);
 
   function handleLogin(user) {
     setUser(user);

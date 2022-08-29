@@ -1,6 +1,7 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
 import zach from "./zach.png";
+import larry from "./larry.jpeg";
 import talvesteel2 from "./talvesteel2.jpg";
 import about from "./about.png";
 
@@ -10,7 +11,7 @@ function About() {
     name: "Larry Talve",
     jobTitle: "President",
     experience: 25,
-    image: zach,
+    image: larry,
     email: "email@email.com",
     phone: "+1(516)-721-4603",
     blurb:
