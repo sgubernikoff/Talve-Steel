@@ -19,7 +19,8 @@ function Footer() {
           {/* <h3>Contact Us</h3> */}
           <p>30 West 63rd Street</p>
           <p>New York, NY 10023</p>
-          <p>xxxxxxxxxxx@gmail.com</p>
+          <p>Zack@anchorstainless.com</p>
+          <p>Larry@anchorstainless.com</p>
           <p>+(1)-516-721-4603</p>
           {/* <p>FAX: +(1)-555-555-5555</p> */}
         </div>
