@@ -59,7 +59,7 @@ function Contact() {
           <div className="contact_text_holder">
             <h3 className="align_left_1">Reach Us</h3>
             <h3 className="align_left">Larry: (516)-721-4603</h3>
-            <h3 className="align_left">Zachary: (516)-974-5707</h3>
+            <h3 className="align_left">Zack: (516)-974-5707</h3>
           </div>
           <div className="contact_text_holder_1">
             <p>
