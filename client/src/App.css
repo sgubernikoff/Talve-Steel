@@ -535,6 +535,7 @@ textarea.form {
   font-size: 2.6vh;
   font-weight: normal;
 }
+
 .align_left_1 {
   text-align: left;
   font-size: 2.6vh;
@@ -560,6 +561,14 @@ textarea.form {
   font-size: 2vh;
   line-height: 1vh;
   margin-left: 10%;
+}
+@media screen and (max-width: 5300px) {
+  .align_left {
+    font-size: 4vw;
+  }
+  .contact_text_holder_2 p {
+    font-size: 4vw;
+  }
 }
 
 .h_line_height {
