@@ -562,11 +562,11 @@ textarea.form {
   line-height: 1vh;
   margin-left: 10%;
 }
-@media screen and (max-width: 5300px) {
+@media screen and (max-width: 530px) {
   .align_left {
     font-size: 4vw;
   }
-  .contact_text_holder_2 p {
+  .contact-form-left p {
     font-size: 4vw;
   }
 }
