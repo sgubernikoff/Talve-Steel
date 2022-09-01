@@ -831,12 +831,12 @@ select {
 .map-container {
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
 }
-.map-container p,
+.map-container > p,
 h4 {
   line-height: normal;
   margin: 0;
-  text-align: left;
 }
 .map-container img {
   margin-bottom: 1px;
