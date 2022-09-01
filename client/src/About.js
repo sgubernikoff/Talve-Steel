@@ -79,7 +79,13 @@ function About() {
             </p>
             <div className="map-container">
               <h4>Corporate Office</h4>
-              <img src={map} alt="map" />
+              <a
+                href="https://www.google.com/maps/place/30+W+63rd+St.,+New+York,+NY+10023/@40.7707681,-73.981731,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f594685643:0x3e387653861d49d8!8m2!3d40.7707681!4d-73.981731"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={map} alt="map" />
+              </a>
               <p>30 West 63rd Street</p>
               <p>New York, NY 10023</p>
             </div>
