@@ -94,6 +94,12 @@ function Product() {
     });
   }
 
+  function logout() {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) setUser("");
+    });
+  }
+
   return (
     <div className="product">
       <div className="new_banner3">
@@ -141,6 +147,9 @@ function Product() {
             )
           ) : null}
           {user.isAdmin ? <Overlay changePassword={true} /> : null}
+          <button onClick={logout} className="delete_button">
+            Log out
+          </button>
         </div>
       ) : (
         <Overlay handleLogin={handleLogin} changePassword={false} />

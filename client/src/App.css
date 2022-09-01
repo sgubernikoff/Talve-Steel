@@ -751,6 +751,11 @@ td {
   width: 500px;
 }
 
+.delete_button {
+  margin-top: 2%;
+  font-size: 2vw;
+}
+
 .overlay_form {
   margin: auto;
   width: 50%;
