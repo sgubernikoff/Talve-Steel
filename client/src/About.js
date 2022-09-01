@@ -15,7 +15,7 @@ function About() {
     email: "Larry@anchorstainless.com",
     phone: "+1(516)-721-4603",
     blurb:
-      "Larry Talve has been in the stainless steel industry for over 35 years. Prior to Anchor Stainless, Larry was a principal owner of Franklin Stainless, which was founded in 1955 by his father Jack. At Franklin, Larry oversaw all sales and production. He has extensive knowledge in slitting, leveling, and polishing as he ran all warehouse operations during his time at Franklin. Larry grew sales exponentially after taking over the company and sold the business in 2008. Since then, Larry has worked in a variety of industries including real estate and finance. Larry’s professional career has almost entirely been dedicated to the stainless steel industry. His passion and desire for the business fueled his decision to found Anchor Stainless in 2022 along with his son, Zachary.",
+      "Larry Talve has been in the stainless steel industry for over 35 years. Prior to Anchor Stainless, Larry was a principal owner of Franklin Stainless, which was founded in 1955 by his father Jack and uncle Mark. At Franklin, Larry oversaw all sales, production, and warehouse operations. He has extensive knowledge in slitting, leveling, and polishing. Larry grew sales exponentially after taking over the company and sold the business in 2008. Since then, Larry has worked in a variety of industries including real estate and finance. Larry’s professional career has almost entirely been dedicated to the stainless steel industry. His passion and desire for the business fueled his decision to found Anchor Stainless in 2022 along with his son, Zachary.",
   };
   const teamMember = {
     isBoss: false,
