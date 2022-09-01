@@ -4,6 +4,7 @@ import zach from "./zach.png";
 import larry from "./larry.jpeg";
 import talvesteel2 from "./talvesteel2.jpg";
 import about from "./about.png";
+import map from "./map.png";
 
 function About() {
   const boss = {
@@ -76,6 +77,12 @@ function About() {
               orci sagittis eu volutpat odio. Malesuada fames ac turpis egestas
               integer eget aliquet. In nibh mauris cursus mattis molestie a.
             </p>
+            <div className="map-container">
+              <h4>Corporate Office</h4>
+              <img src={map} alt="map" />
+              <p>30 West 63rd Street</p>
+              <p>New York, NY 10023</p>
+            </div>
           </div>
         </div>
         <div className="right">

@@ -828,6 +828,21 @@ select {
   margin-top: 1%;
 }
 
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.map-container p,
+h4 {
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+.map-container img {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
 .error {
   width: 80%;
   margin: auto;
