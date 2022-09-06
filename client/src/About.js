@@ -1,6 +1,6 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
-import zach from "./zach.png";
+import zach from "./zach.jpeg";
 import larry from "./larry.jpeg";
 import talvesteel2 from "./talvesteel2.jpg";
 import about from "./about.png";
@@ -41,7 +41,7 @@ function About() {
       <h1 className="slogan">Anchor Stainless - A New Generation</h1>
       <div className="about">
         <div className="leftside">
-          <div className="about-image-container">
+          {/* <div className="about-image-container">
             <img src={talvesteel2} alt="company" />
             <h1>About Us</h1>
             <p>
@@ -89,13 +89,18 @@ function About() {
               <p>30 West 63rd Street</p>
               <p>New York, NY 10023</p>
             </div>
-          </div>
-        </div>
-        <div className="right">
+          </div> */}
           <div className="container-team">
             <div className="about-boss-container">
               <TeamMemberCard teamMember={boss} />
             </div>
+          </div>
+        </div>
+        <div className="right">
+          <div className="container-team">
+            {/* <div className="about-boss-container">
+              <TeamMemberCard teamMember={boss} />
+            </div> */}
             <div className="about-team-members-container">
               <TeamMemberCard teamMember={teamMember} />
             </div>

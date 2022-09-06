@@ -4,7 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
   {
-    url: "https://i0.wp.com/thenybbgroup.com/wp-content/uploads/2019/09/Photo-from-Kyle-for-Web.jpg?fit=1920%2C1200&ssl=1",
+    url: "https://zhengshanggroup.com/wp-content/uploads/2020/11/stainless-steel-coil.jpg",
     caption: "Stainless Steel",
   },
   {
@@ -12,7 +12,7 @@ const slideImages = [
     caption: "Steel Coils",
   },
   {
-    url: "https://t4.ftcdn.net/jpg/04/99/11/31/360_F_499113133_fN7NwLrHBksRHN79vkzrAHFvIvhUBV6X.jpg",
+    url: "https://guptastainless.com/wp-content/uploads/2020/08/Stainless-Steel-Strips-Coils.jpg",
     caption: "Quality Assured",
   },
 ];

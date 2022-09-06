@@ -471,18 +471,17 @@ span {
 }
 
 .team-member-card {
-  width: 75%;
+  width: 80%;
   border: black solid 0.1vw;
   border-radius: 5px;
-  margin-bottom: 5%;
   background-color: white;
   box-shadow: 0.15vw 0.15vw #6e6e6e;
 }
 .team-member-card img {
-  width: 30%;
+  width: 25%;
   /* border: black solid 1px; */
   /* border-radius: 0%; */
-  margin-bottom: -1%;
+  margin-bottom: 1%;
   margin-top: -3%;
   clip-path: circle();
 }
@@ -529,7 +528,7 @@ h1 {
 
 .info-card-text,
 .experience {
-  font-size: 1.65vw;
+  font-size: 1.6em;
 }
 
 .info-card-text-blurb {
@@ -544,6 +543,29 @@ h1 {
 @media screen and (max-width: 660px) {
   .slogan {
     font-size: 150%;
+  }
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container-team {
+    width: 100%;
+  }
+  .team-member-card {
+    width: 80%;
+    height: 50vh;
+  }
+  .team-member-card p {
+    font-size: 0.6em;
+  }
+  .team-member-card img {
+    margin-top: 0;
+  }
+  .leftside {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
   }
 }
 

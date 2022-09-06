@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import talvesteel from "./talvesteel.jpg";
 import map from "./map.png";
+import coils5 from "./coils5.jpg";
 
 function SecondaryAbout() {
   const who = useRef(null);
@@ -17,10 +18,10 @@ function SecondaryAbout() {
       if (entries[0].isIntersecting) who.current.classList.add("fade-in");
     });
     observer.observe(who.current);
-    const observer2 = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) what.current.classList.add("fade-in");
-    });
-    observer2.observe(what.current);
+    // const observer2 = new IntersectionObserver((entries) => {
+    //   if (entries[0].isIntersecting) what.current.classList.add("fade-in");
+    // });
+    // observer2.observe(what.current);
     const observer3 = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) where.current.classList.add("fade-in");
     });
@@ -33,10 +34,10 @@ function SecondaryAbout() {
       if (entries[0].isIntersecting) whoP.current.classList.add("fade-up");
     });
     observer5.observe(whoP.current);
-    const observer6 = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) whatP.current.classList.add("fade-up");
-    });
-    observer6.observe(whatP.current);
+    // const observer6 = new IntersectionObserver((entries) => {
+    //   if (entries[0].isIntersecting) whatP.current.classList.add("fade-up");
+    // });
+    // observer6.observe(whatP.current);
     const observer7 = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) whereP.current.classList.add("fade-up");
     });
@@ -82,8 +83,8 @@ function SecondaryAbout() {
           </p> */}
         </div>
       </div>
-      <img className="citygif" src={talvesteel} alt="steel" />
-      <h1 className="who" ref={what}>
+      <img className="citygif" src={coils5} alt="steel" />
+      {/* <h1 className="who" ref={what}>
         What We Do?
       </h1>
       <div className="para_hold" ref={whatP}>
@@ -100,7 +101,7 @@ function SecondaryAbout() {
             services through our domestic and overseas partners.
           </p>
         </div>
-      </div>
+      </div> */}
       <h1 className="who" ref={where}>
         Where Are We?
       </h1>
@@ -115,10 +116,8 @@ function SecondaryAbout() {
           </a>
           <div style={{ width: "100%" }}>
             <p>
-              Our corportate office is located at 30 W 63rd St in Manhattan, NY,
-              while our warehouse is located in Baltimore, MD. We source our
-              materials from ..., and we serve the entirety of the United States
-              of America.
+              Our corportate office is located at 30 W 63rd St in Manhattan, NY.
+              Our warehouse is located in Baltimore, MD.
             </p>
           </div>
         </div>
@@ -135,7 +134,7 @@ function SecondaryAbout() {
             you will be thrilled to come back for more because of our excellent
             customer service. We promise you will not be dissappointed. Please
             navigate to our <a href="/contact">'Contact'</a> page to get in
-            touch. We can't wait to hear from you!
+            touch.
           </p>
         </div>
       </div>
