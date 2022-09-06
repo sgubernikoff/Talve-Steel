@@ -544,6 +544,9 @@ h1 {
   .slogan {
     font-size: 150%;
   }
+  .cardtitle {
+    font-size: 1.3em;
+  }
   /* .about {
     flex-direction: column;
     width: 100%;
