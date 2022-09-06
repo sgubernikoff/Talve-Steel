@@ -102,7 +102,7 @@ function SecondaryAbout() {
         </div>
       </div>
       <h1 className="who" ref={where}>
-        Where We Are?
+        Where Are We?
       </h1>
       <div className="map-container3" ref={whereP}>
         <div className="map-container2">
