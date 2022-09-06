@@ -159,12 +159,12 @@ span {
   font-family: serif;
   font-weight: normal;
   width: fit-content;
-  padding: 2%;
+  /* padding: 2%; */
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
-  text-shadow: 1px 1px 0 #ffffff;
-  background: -moz-linear-gradient(
+  /* border: 1px solid black; */
+  /* text-shadow: 1px 1px 0 #ffffff; */
+  /* background: -moz-linear-gradient(
     -99deg,
     #dedede,
     #ffffff 16%,
@@ -223,7 +223,7 @@ span {
     #ffffff 80%,
     #dedede 84%,
     #a1a1a1
-  );
+  ); */
 }
 .fade-in {
   animation-duration: 1s;
@@ -247,10 +247,11 @@ span {
 
 .para_hold {
   display: flex;
-  width: 100%;
-  background-color: rgb(131, 131, 131);
-  color: white;
-  margin-bottom: 8%;
+  width: 95%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  color: black;
+  /* margin-bottom: 8%; */
   opacity: 0;
   transform: translateY(-100px);
   /* border-style: solid;
@@ -283,9 +284,12 @@ span {
   margin: auto;
   width: 60%;
 }
+.paragraph a:visited {
+  color: rgb(0, 162, 255);
+}
 
 .citygif {
-  /* margin-top: 5vh; */
+  margin-top: 5vh;
   width: 100%;
   height: 40vh;
 }
@@ -952,7 +956,7 @@ h4 {
   margin-top: 1px;
 }
 .map-container3 {
-  background: rgb(131, 131, 131);
+  background: transparent;
   opacity: 0;
 }
 .map-container2 {
@@ -961,7 +965,7 @@ h4 {
   width: 80%;
   margin: auto;
   align-items: center;
-  color: white;
+  font-size: 1.2em;
 }
 .map-container2 a {
   width: fit-content;
@@ -973,6 +977,16 @@ h4 {
 .map-container2 p {
   width: 60%;
   margin: auto;
+}
+
+@media screen and (max-width: 660px) {
+  .map-container2 {
+    flex-direction: column;
+  }
+  .map-container2 p {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
 
 .error {
