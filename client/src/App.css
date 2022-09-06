@@ -101,7 +101,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 55vh;
+  height: 85vh;
 }
 
 .each-slide span {
@@ -155,24 +155,133 @@ span {
 }
 
 .who {
+  opacity: 0;
   font-family: serif;
   font-weight: normal;
+  width: fit-content;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  text-shadow: 1px 1px 0 #ffffff;
+  background: -moz-linear-gradient(
+    -99deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #6b6b6b 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background: -webkit-linear-gradient(
+    -99deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #6b6b6b 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background: -o-linear-gradient(
+    -99deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #6b6b6b 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background: linear-gradient(
+    -99deg,
+    #6b6b6b,
+    #dedede 16%,
+    #ffffff 21%,
+    #dedede 24%,
+    #ffffff 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+}
+.fade-in {
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 .para_hold {
   display: flex;
-  margin: auto;
-  width: 65%;
-  /* background-color: white;
-  border-style: solid;
+  width: 100%;
+  background-color: rgb(131, 131, 131);
+  color: white;
+  margin-bottom: 8%;
+  opacity: 0;
+  transform: translateY(-100px);
+  /* border-style: solid;
   border-width: 2px;
   border-color: rgb(138, 140, 145);
   border-radius: 10px; */
 }
 
+.fade-up {
+  animation-duration: 1.5s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+  animation-name: animate-up;
+}
+
+@keyframes animate-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .paragraph {
   font-size: 1.2em;
-  margin-bottom: 8%;
+  margin: auto;
+  width: 60%;
 }
 
 .citygif {
@@ -576,7 +685,7 @@ textarea.form {
 }
 
 .new_banner {
-  height: 55vh;
+  height: 85vh;
   width: 100%;
   background-image: url(https://www.plymouth.com/wp-content/uploads/2019/04/pancake.jpg);
   background-repeat: no-repeat;
@@ -585,7 +694,7 @@ textarea.form {
 }
 
 .new_banner2 {
-  height: 55vh;
+  height: 85vh;
   width: 100%;
   background-image: url(https://img1.exportersindia.com/product_images/bc-full/2018/9/4404340/stainless-steel-coil-1536399102-4277678.jpeg);
   background-repeat: no-repeat;
@@ -594,7 +703,7 @@ textarea.form {
 }
 
 .new_banner3 {
-  height: 55vh;
+  height: 85vh;
   width: 100%;
   background-image: url(https://cdn.thomasnet.com/insights-images/embedded-images/16036a0b-22ff-437b-ab8a-00aa437747d3/d007c09e-b2ab-4fbd-b561-ebb88819549d/FullHD/shutterstock_1655310466-min.jpg);
   background-repeat: no-repeat;
@@ -603,7 +712,7 @@ textarea.form {
 }
 
 .new_banner4 {
-  height: 55vh;
+  height: 85vh;
   width: 100%;
   background-image: url(https://media.istockphoto.com/photos/steel-coils-picture-id172663331?k=20&m=172663331&s=612x612&w=0&h=D7oWyXI7jUgGE0bQWplgC6hVnm0A_0um0VNJ3CAD24g=);
   background-repeat: no-repeat;
@@ -841,6 +950,29 @@ h4 {
 .map-container img {
   margin-bottom: 1px;
   margin-top: 1px;
+}
+.map-container3 {
+  background: rgb(131, 131, 131);
+  opacity: 0;
+}
+.map-container2 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  color: white;
+}
+.map-container2 a {
+  width: fit-content;
+  display: flex;
+}
+.map-container2 img {
+  width: 100%;
+}
+.map-container2 p {
+  width: 60%;
+  margin: auto;
 }
 
 .error {
