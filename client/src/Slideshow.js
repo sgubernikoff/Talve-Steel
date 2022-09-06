@@ -1,19 +1,21 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import coils6 from "./coils6.jpg";
+import coils from "./coilpic.jpg";
 
 const slideImages = [
   {
-    url: "https://zhengshanggroup.com/wp-content/uploads/2020/11/stainless-steel-coil.jpg",
+    url: coils,
+    caption: "Quality Assured",
+  },
+  {
+    url: coils6,
     caption: "Stainless Steel",
   },
   {
     url: "https://gisp.com/wp-content/uploads/2020/12/stainless-steel-price-in-china.jpg",
     caption: "Steel Coils",
-  },
-  {
-    url: "https://guptastainless.com/wp-content/uploads/2020/08/Stainless-Steel-Strips-Coils.jpg",
-    caption: "Quality Assured",
   },
 ];
 
@@ -33,7 +35,12 @@ const Slideshow = () => {
       <Slide {...properties}>
         {slideImages.map((slideImage, index) => (
           <div className="each-slide" key={index}>
-            <div style={{ backgroundImage: `url(${slideImage.url})` }}>
+            <div
+              style={{
+                backgroundImage: `url(${slideImage.url})`,
+                backgroundPosition: "center",
+              }}
+            >
               <span>{slideImage.caption}</span>
             </div>
           </div>

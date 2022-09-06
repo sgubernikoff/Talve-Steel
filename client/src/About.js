@@ -40,8 +40,8 @@ function About() {
       {/* <img className="contact_banner" src={about} alt="contact-banner" /> */}
       <h1 className="slogan">Anchor Stainless - A New Generation</h1>
       <div className="about">
-        <div className="leftside">
-          {/* <div className="about-image-container">
+        {/* <div className="leftside"> */}
+        {/* <div className="about-image-container">
             <img src={talvesteel2} alt="company" />
             <h1>About Us</h1>
             <p>
@@ -90,21 +90,11 @@ function About() {
               <p>New York, NY 10023</p>
             </div>
           </div> */}
-          <div className="container-team">
-            <div className="about-boss-container">
-              <TeamMemberCard teamMember={boss} />
-            </div>
-          </div>
-        </div>
-        <div className="right">
-          <div className="container-team">
-            {/* <div className="about-boss-container">
-              <TeamMemberCard teamMember={boss} />
-            </div> */}
-            <div className="about-team-members-container">
-              <TeamMemberCard teamMember={teamMember} />
-            </div>
-            <br></br>
+        <div className="container-team">
+          <div className="about-boss-container">
+            <TeamMemberCard teamMember={boss} />
+
+            <TeamMemberCard teamMember={teamMember} />
           </div>
         </div>
       </div>

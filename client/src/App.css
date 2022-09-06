@@ -101,7 +101,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 85vh;
+  height: 55vh;
 }
 
 .each-slide span {
@@ -468,15 +468,18 @@ span {
   margin-bottom: 4%;
   width: 100%;
   margin: auto;
+  /* height: 80vh; */
 }
 
 .team-member-card {
-  width: 80%;
+  width: 100%;
   border: black solid 0.1vw;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0.15vw 0.15vw #6e6e6e;
+  margin: 1.5%;
 }
+
 .team-member-card img {
   width: 25%;
   /* border: black solid 1px; */
@@ -515,11 +518,8 @@ h1 {
 }
 
 .container-team {
-  border-radius: 2vw;
-  margin-right: 5%;
-  /* background-color: rgb(255, 255, 255);
-  box-shadow: 0.35vw 0.35vw #6e6e6e; */
-  margin-bottom: 5%;
+  width: 80%;
+  margin: auto;
 }
 
 .about {
@@ -528,7 +528,7 @@ h1 {
 
 .info-card-text,
 .experience {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .info-card-text-blurb {
@@ -544,28 +544,27 @@ h1 {
   .slogan {
     font-size: 150%;
   }
-  .about {
+  /* .about {
     flex-direction: column;
     width: 100%;
-  }
-  .container-team {
-    width: 100%;
-  }
-  .team-member-card {
+  } */
+  /* .container-team {
+    margin: auto;
+  } */
+  /* .team-member-card {
     width: 80%;
-    height: 50vh;
-  }
+    height: 42vh;
+  } */
   .team-member-card p {
-    font-size: 0.6em;
+    font-size: 1em;
   }
   .team-member-card img {
     margin-top: 0;
   }
-  .leftside {
-    width: 100%;
-  }
-  .right {
-    width: 100%;
+  .about-boss-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
   }
 }
 
@@ -711,7 +710,7 @@ textarea.form {
 }
 
 .new_banner {
-  height: 85vh;
+  height: 55vh;
   width: 100%;
   background-image: url(https://www.plymouth.com/wp-content/uploads/2019/04/pancake.jpg);
   background-repeat: no-repeat;
@@ -720,7 +719,7 @@ textarea.form {
 }
 
 .new_banner2 {
-  height: 85vh;
+  height: 55vh;
   width: 100%;
   background-image: url(https://img1.exportersindia.com/product_images/bc-full/2018/9/4404340/stainless-steel-coil-1536399102-4277678.jpeg);
   background-repeat: no-repeat;
@@ -729,7 +728,7 @@ textarea.form {
 }
 
 .new_banner3 {
-  height: 85vh;
+  height: 55vh;
   width: 100%;
   background-image: url(https://cdn.thomasnet.com/insights-images/embedded-images/16036a0b-22ff-437b-ab8a-00aa437747d3/d007c09e-b2ab-4fbd-b561-ebb88819549d/FullHD/shutterstock_1655310466-min.jpg);
   background-repeat: no-repeat;
@@ -738,7 +737,7 @@ textarea.form {
 }
 
 .new_banner4 {
-  height: 85vh;
+  height: 55vh;
   width: 100%;
   background-image: url(https://media.istockphoto.com/photos/steel-coils-picture-id172663331?k=20&m=172663331&s=612x612&w=0&h=D7oWyXI7jUgGE0bQWplgC6hVnm0A_0um0VNJ3CAD24g=);
   background-repeat: no-repeat;
@@ -987,7 +986,7 @@ h4 {
   width: 80%;
   margin: auto;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.45em;
 }
 .map-container2 a {
   width: fit-content;
