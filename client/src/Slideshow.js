@@ -7,15 +7,15 @@ import coils from "./coilpic.jpg";
 const slideImages = [
   {
     url: coils,
-    caption: "Quality Assured",
-  },
-  {
-    url: coils6,
     caption: "Stainless Steel",
   },
   {
-    url: "https://gisp.com/wp-content/uploads/2020/12/stainless-steel-price-in-china.jpg",
+    url: coils6,
     caption: "Steel Coils",
+  },
+  {
+    url: "https://gisp.com/wp-content/uploads/2020/12/stainless-steel-price-in-china.jpg",
+    caption: "Quality Assured",
   },
 ];
 

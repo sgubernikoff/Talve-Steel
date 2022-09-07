@@ -284,6 +284,13 @@ span {
   margin: auto;
   width: 60%;
 }
+@media screen and (max-width: 660px) {
+  .paragraph {
+    font-size: 1.2em;
+    margin: auto;
+    width: 80%;
+  }
+}
 .paragraph a:visited {
   color: rgb(0, 162, 255);
 }
