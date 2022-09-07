@@ -744,6 +744,7 @@ textarea.form {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  background-position: center;
 }
 
 .new_banner4 {
@@ -1048,5 +1049,28 @@ h4 {
   100% {
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+
+.product_info_hold {
+  display: flex;
+  width: 95%;
+  /* background-color: rgb(255, 255, 255); */
+  margin: auto;
+  color: black;
+}
+
+.paragraph_prod {
+  width: 85%;
+  margin: auto;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 660px) {
+  .paragraph_prod {
+    width: 80%;
+    margin: auto;
+    font-size: 0.8em;
+    margin-bottom: 5%;
   }
 }

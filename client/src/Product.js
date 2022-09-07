@@ -108,6 +108,20 @@ function Product() {
           <h2 className="mainhead">VIEW INVENTORY</h2>
         </div>
       </div>
+      <h1>Anchor Stainless Products</h1>
+      <div className="product_info_hold">
+        <p className="paragraph_prod">
+          Anchor Stainless was started with the goal of providing customers
+          throughout the United States with quality material at competitive
+          prices. Anchor Stainless stocks type 304L, 316L, and type 400
+          stainless with thickness running from .010” to .125”. In addition, we
+          have the capability to place production orders directly from the mill
+          for specific requirements. We can also provide slitting and polishing
+          services through our domestic and overseas partners. We pride
+          ourselves on providing seamless customer service and holding nothing
+          but exceptional quality products for our customers.
+        </p>
+      </div>
       {user ? (
         <div className="table_product">
           <table ref={table}>
