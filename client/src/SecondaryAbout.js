@@ -56,14 +56,13 @@ function SecondaryAbout() {
       <div className="para_hold" ref={whoP}>
         <div className="paragraph">
           <p>
-            Anchor Stainless specializes in steel distribution. The company was
-            founded in 2022 by father-son duo, Larry and Zack Talve. Together
-            they bring experience, understanding, and passion that is unmatched
-            by their competitors in the steel distribution business. Larry has
-            35 years of industry experience and expertise while Zack brings a
-            strong background in sales and a passion to carry on the family
-            legacy to the table. Please check out our{" "}
-            <a href="/about">'About'</a> section to learn even more about us!
+            Anchor Stainless specializes in stainless steel distribution. The
+            company was founded in 2022 by Larry and Zack Talve. Together they
+            bring experience, understanding, and passion to the industry. Larry
+            has 35 years of industry experience and expertise while Zack brings
+            a strong background in sales and entrepreneurship. Please check out
+            our <a href="/about">'About'</a> section to learn even more about
+            us!
           </p>
           {/* <p>
             Anchor Stainless, a stainless steel distribution company, was
@@ -129,12 +128,13 @@ function SecondaryAbout() {
       <div className="para_hold" ref={whyP}>
         <div className="paragraph">
           <p>
-            Our committment to excellence in everything we do is obvious. Not
-            only will you leave with the finest quality steel man can buy, but
-            you will be thrilled to come back for more because of our excellent
-            customer service. We promise you will not be dissappointed. Please
-            navigate to our <a href="/contact">'Contact'</a> page to get in
-            touch.
+            Our commitment is to excellence in both customer service and product
+            quality. We work with our individual clients to satisfy their
+            specific needs and requirements. Flexible payment terms and
+            logistics allow us to serve clients throughout the entire US market.
+            Our mill relationships allow us to provide a steady flow of prime
+            stainless steel material. Please navigate to our{" "}
+            <a href="/contact">'Contact'</a> page to get in touch.
           </p>
         </div>
       </div>
