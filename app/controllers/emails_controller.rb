@@ -1,4 +1,7 @@
 class EmailsController < ApplicationController
+    skip_before_action :is_logged_in?
+    skip_before_action :is_admin_logged_in?
+    
     def index
         render json:{a:'idk'}
     end
