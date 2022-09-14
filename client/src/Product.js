@@ -113,7 +113,7 @@ function Product() {
         <p className="paragraph_prod">
           Anchor Stainless was started with the goal of providing customers
           throughout the United States with quality material at competitive
-          prices. Anchor Stainless stocks type 304L, 316L, and type 400
+          prices. Anchor Stainless stocks type 304L, 316L, and type 430
           stainless with thickness running from .010” to .125”. In addition, we
           have the capability to place production orders directly from the mill
           for specific requirements. We can also provide slitting and polishing

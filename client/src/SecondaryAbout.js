@@ -57,7 +57,7 @@ function SecondaryAbout() {
         <div className="paragraph">
           <p>
             Anchor Stainless specializes in stainless steel distribution. The
-            company was founded in 2022 by Larry and Zack Talve. Together they
+            company was founded in 2021 by Larry and Zack Talve. Together they
             bring experience, understanding, and passion to the industry. Larry
             has 35 years of industry experience and expertise while Zack brings
             a strong background in sales and entrepreneurship. Please check out
@@ -132,8 +132,8 @@ function SecondaryAbout() {
             quality. We work with our individual clients to satisfy their
             specific needs and requirements. Flexible payment terms and
             logistics allow us to serve clients throughout the entire US market.
-            Our mill relationships allow us to provide a steady flow of prime
-            stainless steel material. Please navigate to our{" "}
+            Our warehouse, which is located in Baltimore, allows us to serve
+            clients throughout the United States. Please navigate to our{" "}
             <a href="/contact">'Contact'</a> page to get in touch.
           </p>
         </div>
