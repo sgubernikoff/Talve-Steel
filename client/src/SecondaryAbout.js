@@ -57,10 +57,10 @@ function SecondaryAbout() {
         <div className="paragraph">
           <p>
             Anchor Stainless specializes in stainless steel distribution. The
-            company was founded in 2021 by Larry and Zack Talve. Together they
-            bring experience, understanding, and passion to the industry. Larry
-            has 35 years of industry experience and expertise while Zack brings
-            a strong background in sales and entrepreneurship. Please check out
+            company was founded by Larry and Zack Talve. Together they bring
+            experience, understanding, and passion to the industry. Larry has 35
+            years of industry experience and expertise while Zack brings a
+            strong background in sales and entrepreneurship. Please check out
             our <a href="/about">'About'</a> section to learn even more about
             us!
           </p>
