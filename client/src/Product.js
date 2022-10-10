@@ -46,7 +46,7 @@ function Product() {
   function updateCoilsOnEditCoil(editedCoil) {
     const filteredCoils = coils.filter((c) => editedCoil.id !== c.id);
     const updatedCoils = [...filteredCoils, editedCoil];
-    setCoils(updatedCoils);
+    setCoils(updatedCoils.sort((a, b) => a.id - b.id));
   }
 
   useEffect(() => {
@@ -64,16 +64,18 @@ function Product() {
     }, 550);
   }
 
-  const tableRow = coils.map((data) => (
-    <TableRow
-      data={data}
-      user={user}
-      updateCoilsOnDeleteCoil={updateCoilsOnDeleteCoil}
-      updateCoilsOnEditCoil={updateCoilsOnEditCoil}
-      errorAnimation={errorAnimation}
-      key={data.id}
-    />
-  ));
+  const tableRow = coils
+    .sort((a, b) => a.id - b.id)
+    .map((data) => (
+      <TableRow
+        data={data}
+        user={user}
+        updateCoilsOnDeleteCoil={updateCoilsOnDeleteCoil}
+        updateCoilsOnEditCoil={updateCoilsOnEditCoil}
+        errorAnimation={errorAnimation}
+        key={data.id}
+      />
+    ));
 
   function handleSubmit() {
     fetch("/coils", {
@@ -129,9 +131,9 @@ function Product() {
               <tr>
                 <th>No.</th>
                 <th>Grade</th>
-                <th>Commodities & Specification (MM)</th>
-                <th>Net Weight (KGs)</th>
-                <th>Gross Weight (KGs)</th>
+                <th>Commodities & Specification (IN)</th>
+                <th>Net Weight (LBs)</th>
+                <th>Gross Weight (LBs)</th>
                 <th>Quantity</th>
                 <th>Pkgs</th>
               </tr>
